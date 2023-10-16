@@ -28,6 +28,9 @@
 .grid__list_link {
 	position: relative;
 	cursor: pointer;
+	border-radius: 1rem;
+	overflow: hidden;
+	display: block;
 
 	&:after {
 		position: absolute;

@@ -71,7 +71,7 @@
 	}
 
 	.review__slide_item:nth-child(even) & {
-		@include bp($point_1, min) {
+		@include bp($point_4, min) {
 			margin-right: 0;
 			margin-left: 2rem;
 		}
@@ -154,6 +154,7 @@
 		display: block;
 		counter-increment: section;
 		content: counter(section);
+		font-family: $font_2;
 	}
 
 	&.swiper-pagination-bullet-active {

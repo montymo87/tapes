@@ -39,7 +39,7 @@ section.section.review
 											.review__slide_title= subitem.title
 											.review__slide_descr= subitem.descr
 										if subitem.img
-											.review__slide_img
+											.review__slide_img(data-fancybox="single" data-src=`images/review/${index + 1}.jpg`)
 												img(src=`images/review/${index + 1}.jpg`, alt="some img")
 
 			.review__slider__dots.js-slider-dots

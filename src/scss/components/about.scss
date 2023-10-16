@@ -5,7 +5,7 @@
 }
 
 .about__list {
-	@include flex_block(row, wrap, center, center, center);
+	@include flex_block(row, wrap, center);
 
 	margin: 0 -4rem -4rem 0;
 }
@@ -26,7 +26,7 @@
 
 .about__item_in {
 	@include bp($point_2, min) {
-		@include flex_block(row, nowrap, flex-start, center, center);
+		@include flex_block(row, nowrap, flex-start);
 	}
 	@include bp($point_3) {
 		@include flex_block(column, nowrap, center, center, center);

@@ -124,6 +124,7 @@
 
 	.header__top_link--shop_mod & {
 		position: relative;
+		font-weight: 700;
 
 		&:after {
 			position: absolute;
@@ -164,12 +165,18 @@
 
 	.header__top_link--shop_mod & {
 		color: $gray;
+		font-weight: 700;
 	}
 
 	.header__top_link--phone_mod & {
+		font-family: $font_2;
 		font-size: 2rem;
 		color: $gray;
 		font-weight: 600;
+	}
+
+	.header__nav_item & {
+		font-weight: 700;
 	}
 
 	@include bp($point_2, min) {

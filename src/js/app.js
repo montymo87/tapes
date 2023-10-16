@@ -3,6 +3,7 @@ import reviewSlider from 'components/review-slider';
 import initPopup from 'components/init-popup';
 import fade from 'components/fade';
 import heroAnimation from 'components/hero-animation';
+import formMask from 'components/form-mask';
 // import succes from 'components/succes';
 // import failed from 'components/failed';
 
@@ -46,6 +47,7 @@ export default class App {
 			initPopup('.js-popup-contact-trigger', '.js-popup-contact');
 			fade();
 			heroAnimation();
+			formMask();
 		});
 		setTimeout(() => {
 			this.importPage();

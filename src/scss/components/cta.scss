@@ -48,6 +48,7 @@
 .cta__title {
 	font-size: 4rem;
 	line-height: 1.1;
+	font-weight: 700;
 
 	&:not(:last-child) {
 		@include bp($point_2, min) {
@@ -78,8 +79,14 @@
 }
 
 .cta__list {
-	@include flex_block(row, wrap, flex-start);
 	margin: 0 -2.8rem -2rem 0;
+
+	@include bp($point_2, min) {
+		@include flex_block(row, wrap, flex-start);
+	}
+	@include bp($point_3) {
+		@include flex_block(row, wrap, center);
+	}
 }
 
 .cta__item {
@@ -98,6 +105,10 @@
 .cta__item_title {
 	@include text;
 	font-weight: 800;
+
+	.cta__item:last-child & {
+		font-weight: 600;
+	}
 }
 
 .cta__img_w {
@@ -113,5 +124,23 @@
 .cta__btn_w {
 	@include bp($point_3) {
 		@include flex_block(row, wrap, center, center, center);
+	}
+}
+
+.cta__btn {
+	height: 7.2rem;
+	line-height: 7.2rem;
+
+	@include bp($point_3) {
+		font-size: 1.6rem;
+		font-weight: 400;
+	}
+
+	background-color: #4b9fec;
+	box-shadow: inset 0px 0px 0px 2px rgba($gray, 0);
+
+	&:hover {
+		background-color: transparent;
+		box-shadow: inset 0px 0px 0px 2px rgba($gray, 1);
 	}
 }

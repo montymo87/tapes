@@ -83,6 +83,7 @@
 		border-radius: 50%;
 		background-color: $red;
 		color: $gray;
+		font-family: $font_2;
 
 		counter-increment: items;
 		content: counter(items);
@@ -96,6 +97,7 @@
 .pay__item_title {
 	font-size: 2rem;
 	font-weight: 800;
+	text-transform: uppercase;
 
 	&:not(:last-child) {
 		margin-bottom: 3rem;

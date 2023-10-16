@@ -76,6 +76,7 @@
 	font-size: 2rem;
 	color: $gray;
 	font-weight: 600;
+	font-family: $font_2;
 
 	transition: opacity ease 0.3s;
 
@@ -201,8 +202,9 @@
 	}
 
 	&.footer__link--arkada_mod {
-		width: 18.8;
+		width: 18.8rem;
 		height: 2.5rem;
+		margin-left: auto;
 	}
 
 	img {

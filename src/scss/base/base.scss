@@ -162,3 +162,81 @@ html :where(.wp-block) {
 .js-hero-animation {
 	opacity: 1;
 }
+
+.article_content {
+	width: 100%;
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	ul,
+	figure,
+	img,
+	blockquote {
+		&:not(:last-child) {
+			margin-bottom: 1.5rem;
+		}
+	}
+
+	h1 {
+		@include h1;
+
+		&:not(:last-child) {
+			@include bp($point_2, min) {
+				margin-bottom: 5rem;
+			}
+			@include bp($point_3) {
+				margin-bottom: 2rem;
+			}
+		}
+	}
+
+	h2 {
+		@include h2;
+		font-weight: 500;
+	}
+
+	h3 {
+		@include h3;
+	}
+
+	h4 {
+		@include h4;
+	}
+
+	h5 {
+		@include h5;
+	}
+
+	h6 {
+		@include h6;
+	}
+
+	p {
+		@include text_s;
+		font-weight: 500;
+
+		&:not(:last-child) {
+			margin-bottom: 1.5rem;
+		}
+	}
+
+	ul {
+		li {
+			&:not(:last-child) {
+				margin-bottom: 1rem;
+			}
+		}
+	}
+
+	strong {
+		font-weight: 700;
+	}
+
+	&:not(:last-child) {
+		margin-bottom: 3rem;
+	}
+}
