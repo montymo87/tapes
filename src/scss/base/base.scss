@@ -7,14 +7,45 @@
 :root {
 	--full-screen: calc(var(--vh, 1vh) * 100);
 
-	--height-header: 10rem;
 	--height-footer: 10rem;
-	--gl-indent: 5rem;
+
+	@include bp($point_2, min) {
+		--height-header: 14.2rem;
+		--gl-vr-indent: 6rem;
+		--gl-indent: 4rem;
+	}
+	@include bp($point_3) {
+		--height-header: 8rem;
+		--gl-vr-indent: 3rem;
+		--gl-indent: 2rem;
+	}
 }
 
 html {
 	height: 100%;
-	font: 400 calc(100vw / 1920 * 10) / 1.33 $font_1;
+	font-weight: 400;
+	line-height: 1.2;
+	font-family: $font_1;
+
+	@include bp(1920px, min) {
+		font-size: calc(100vw / 1920 * 10);
+	}
+
+	@include bp(1919px, $point_1) {
+		font-size: 10px;
+	}
+
+	@include bp($point_1 - 1, $point_2) {
+		font-size: calc(100vw / 1200 * 10);
+	}
+
+	@include bp($point_3, $point_7) {
+		font-size: 10px;
+	}
+
+	@include bp($point_7 - 1) {
+		font-size: calc(100vw / 390 * 10);
+	}
 }
 
 body {
@@ -34,6 +65,25 @@ body {
 
 	@supports (display: grid) {
 		display: block;
+	}
+
+	&.body--popup_open,
+	&.body--open_menu_state {
+		overflow: hidden;
+	}
+
+	&:before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		width: 100%;
+		height: var(--height-header);
+		content: '';
+
+		background: linear-gradient($blue, transparent 1px), linear-gradient(90deg, $blue, transparent 1px);
+		background-size: 3rem 3rem;
+		background-position: center center;
 	}
 }
 
@@ -100,3 +150,15 @@ html :where(.wp-block) {
 }
 
 //------------------------------------------------------------base styles###
+
+.js-hero-animation-img,
+.js-hero-animation-btn,
+.js-hero-animation-descr,
+.js-hero-animation-title,
+.js-fade-el {
+	will-change: transform;
+}
+
+.js-hero-animation {
+	opacity: 1;
+}

@@ -1,3 +1,11 @@
+import gridPreview from 'components/grid-preview';
+import reviewSlider from 'components/review-slider';
+import initPopup from 'components/init-popup';
+import fade from 'components/fade';
+import heroAnimation from 'components/hero-animation';
+// import succes from 'components/succes';
+// import failed from 'components/failed';
+
 import layout from 'layout/layout';
 import { pageLoad } from './utils';
 
@@ -32,6 +40,12 @@ export default class App {
 		const initLayout = layout();
 		pageLoad(() => {
 			document.body.classList.add('body--loaded');
+
+			gridPreview();
+			reviewSlider();
+			initPopup('.js-popup-contact-trigger', '.js-popup-contact');
+			fade();
+			heroAnimation();
 		});
 		setTimeout(() => {
 			this.importPage();

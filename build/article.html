@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" data-template-name="article">
+  <head>
+    <meta charset="UTF-8">
+    <title>Article</title>
+    <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="images/favicon.ico">
+  <link href="css/app.css" rel="stylesheet"></head>
+  <body>
+    <div class="preloader"></div>
+    <header class="header">
+      <div class="header__in">
+        <div class="header__row header__row--top_mod"><a class="header__logo_w" href="#">
+            <div class="header__logo_title">выпуск лент</div></a>
+          <div class="header__menu">
+            <div class="header__nav_w">
+              <div class="header__top_link header__top_link--shop_mod"><a class="header__link" href="#"><span class="header__icon">
+                    <svg class="icon icon_store icon--size_mod">
+                      <use xlink:href="images/sprite/sprite.svg#store"></use>
+                    </svg></span><span class="header__link_title">Перейти в магазин</span></a></div>
+              <nav class="header__nav header__nav--mobile_mod">
+                <ul class="header__nav_list">
+                  <li class="header__nav_item"><a class="header__link" href="#"><span class="header__icon">
+                        <svg class="icon icon_camera icon--size_mod">
+                          <use xlink:href="images/sprite/sprite.svg#camera"></use>
+                        </svg></span><span class="header__link_title">Галерея работ</span></a></li>
+                  <li class="header__nav_item"><a class="header__link" href="#"><span class="header__icon">
+                        <svg class="icon icon_star icon--size_mod">
+                          <use xlink:href="images/sprite/sprite.svg#star"></use>
+                        </svg></span><span class="header__link_title">Преимущества</span></a></li>
+                  <li class="header__nav_item"><a class="header__link" href="#"><span class="header__icon">
+                        <svg class="icon icon_payment icon--size_mod">
+                          <use xlink:href="images/sprite/sprite.svg#payment"></use>
+                        </svg></span><span class="header__link_title">Об оплате</span></a></li>
+                  <li class="header__nav_item"><a class="header__link" href="#"><span class="header__icon">
+                        <svg class="icon icon_chat icon--size_mod">
+                          <use xlink:href="images/sprite/sprite.svg#chat"></use>
+                        </svg></span><span class="header__link_title">Отзывы</span></a></li>
+                </ul>
+              </nav>
+              <div class="header__top_link header__top_link--phone_mod"><a class="header__link" href="#"><span class="header__icon">
+                    <svg class="icon icon_phone icon--size_mod">
+                      <use xlink:href="images/sprite/sprite.svg#phone"></use>
+                    </svg></span><span class="header__link_title">+7 (903) 425-80-43</span></a></div>
+              <div class="header__top_link"><a class="btn_1 js-popup-contact-trigger" href="#">Заказать звонок</a></div>
+              <div class="header__top_social_w"><a class="header__social" href="#" aria-lebel="social">
+                  <svg class="icon icon_whatsapp icon--size_mod">
+                    <use xlink:href="images/sprite/sprite.svg#whatsapp"></use>
+                  </svg></a><a class="header__social" href="#" aria-lebel="social">
+                  <svg class="icon icon_telegram icon--size_mod">
+                    <use xlink:href="images/sprite/sprite.svg#telegram"></use>
+                  </svg></a></div>
+            </div>
+          </div>
+          <button class="header__menu_trigger js-header-menu-trigger" type="button" aria-label="Toggle menu"><span></span></button>
+        </div>
+        <div class="header__row header__row--bot_mod">
+          <div class="header__nav_w">
+            <nav class="header__nav">
+              <ul class="header__nav_list">
+                <li class="header__nav_item"><a class="header__link" href="#"><span class="header__icon">
+                      <svg class="icon icon_camera icon--size_mod">
+                        <use xlink:href="images/sprite/sprite.svg#camera"></use>
+                      </svg></span><span class="header__link_title">Галерея работ</span></a></li>
+                <li class="header__nav_item"><a class="header__link" href="#"><span class="header__icon">
+                      <svg class="icon icon_star icon--size_mod">
+                        <use xlink:href="images/sprite/sprite.svg#star"></use>
+                      </svg></span><span class="header__link_title">Преимущества</span></a></li>
+                <li class="header__nav_item"><a class="header__link" href="#"><span class="header__icon">
+                      <svg class="icon icon_payment icon--size_mod">
+                        <use xlink:href="images/sprite/sprite.svg#payment"></use>
+                      </svg></span><span class="header__link_title">Об оплате</span></a></li>
+                <li class="header__nav_item"><a class="header__link" href="#"><span class="header__icon">
+                      <svg class="icon icon_chat icon--size_mod">
+                        <use xlink:href="images/sprite/sprite.svg#chat"></use>
+                      </svg></span><span class="header__link_title">Отзывы</span></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="base">
+        <style>
+          .article_content {
+          	font-size: 1.6rem;
+          }
+          h1 {
+          	font-size: 2.8rem;
+          	margin-bottom: 3rem;
+          }
+          h2 {
+          	font-size: 2.4rem;
+          	margin-bottom: 1.6rem;
+          }
+          h3 {
+          	font-size: 2rem;
+          	margin-bottom: 1rem;
+          }
+          p {
+          	margin-bottom: 1rem;
+          }
+          ul,ol {
+          	margin-bottom: 1.6rem;
+          }
+        </style>
+        <section class="section article_content">
+          <div class="section_in">
+            <h1>Markup requirements and examples for WP article single page (blog single post, etc.)</h1>
+            <h2>Example on WP site <a href="https://woo.glivera.com/test-page/">here</a></h2>
+            <h2>Section should be named .article_content <br> All styles will be nested from parent selector, for ex. article_content p {some style}</h2>
+            <h2> </h2>
+            <h2>Simple paragraph</h2>
+            <p><b>Lorem ipsum</b> is simply dummy text of the <i>printing</i> and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley 
+              of type and scrambled it to make a type specimen book. It has survived not only five centuries
+            </p>
+            <p><b>Lorem ipsum</b> is simply dummy text of the <i>printing</i> and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley 
+              of type and scrambled it to make a type specimen book. It has survived not only five centuries				
+            </p>
+            <h2>UL list </h2>
+            <ul>
+              <li>list item</li>
+              <li>list item</li>
+              <li>list item</li>
+            </ul>
+            <h2>OL list </h2>
+            <ol>
+              <li>list item</li>
+              <li>list item</li>
+              <li>list item		</li>
+            </ol>
+            <h2>WP table </h2>
+            <figure class="wp-block-table">
+              <table>
+                <tbody>
+                  <tr>
+                    <td>table cell</td>
+                    <td>table cell</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <figcaption>table caption</figcaption>
+            </figure>
+            <h2>WP embeded video</h2>
+            <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
+              <div class="wp-block-embed__wrapper">
+                <iframe title="Rick Astley - Never Gonna Give You Up (Official Music Video)" width="525" height="295" src="https://www.youtube.com/embed/dQw4w9WgXcQ?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+              </div>
+              <figcaption>video caption</figcaption>
+            </figure>
+            <h2>WP simple blockquote </h2>
+            <blockquote class="wp-block-quote">
+              <p>Quote description, can be <strong>bold</strong><em>italic</em></p>
+              <cite>Quote Author, can be <strong>bold</strong><em>italic</em></cite>
+            </blockquote>
+            <h2>WP Single image </h2>
+            <figure class="wp-block-image"><img class="wp-image-77 loading" loading="lazy" width="801" height="801" src="http://woo.glivera.com/wp-content/uploads/2022/10/long-sleeve-tee-2.jpg" alt="" srcset="https://woo.glivera.com/wp-content/uploads/2022/10/long-sleeve-tee-2.jpg 801w, https://woo.glivera.com/wp-content/uploads/2022/10/long-sleeve-tee-2-100x100.jpg 100w, https://woo.glivera.com/wp-content/uploads/2022/10/long-sleeve-tee-2-600x600.jpg 600w, https://woo.glivera.com/wp-content/uploads/2022/10/long-sleeve-tee-2-300x300.jpg 300w, https://woo.glivera.com/wp-content/uploads/2022/10/long-sleeve-tee-2-150x150.jpg 150w, https://woo.glivera.com/wp-content/uploads/2022/10/long-sleeve-tee-2-768x768.jpg 768w" sizes="(max-width: 801px) 100vw, 801px">
+              <figcaption>image caption </figcaption>
+            </figure>
+            <h2>WP Media & text </h2>
+            <div class="wp-block-media-text alignwide is-stacked-on-mobile is-vertically-aligned-top" style="grid-template-columns:19% auto">
+              <figure class="wp-block-media-text__media"><img class="size-full loading" loading="lazy" width="128" height="77" src="http://woo.glivera.com/wp-content/uploads/2022/12/logo_woo.png" alt="" data-was-processed="true"></figure>
+              <div class="wp-block-media-text__content">
+                <p></p>adipiscing at in tellus integer feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit amet porttitor eget dolor morbi non arcu risus quis varius quam quisque id diam vel quam elementum pulvinar etiam non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="footer">
+        <div class="footer__in">
+          <div class="footer__row"><a class="footer__logo_w" href="#">
+              <div class="footer__logo_title">выпуск лент</div></a><a class="footer__phone" href="#"><span class="footer__icon">
+                <svg class="icon icon_phone icon--size_mod">
+                  <use xlink:href="images/sprite/sprite.svg#phone"></use>
+                </svg></span><span class="footer__phone_title">+7 (903) 425-80-43</span></a>
+            <div class="footer__btn"><a class="btn_1 js-popup-contact-trigger" href="#">Заказать звонок</a></div>
+          </div>
+          <div class="footer__row">
+            <div class="footer__col">
+              <div class="footer__top_social_w"><a class="footer__social" href="#" aria-lebel="social">
+                  <svg class="icon icon_whatsapp icon--size_mod">
+                    <use xlink:href="images/sprite/sprite.svg#whatsapp"></use>
+                  </svg></a><a class="footer__social" href="#" aria-lebel="social">
+                  <svg class="icon icon_telegram icon--size_mod">
+                    <use xlink:href="images/sprite/sprite.svg#telegram"></use>
+                  </svg></a></div>
+              <ul class="footer__contact_list">
+                <li class="footer__contact_item"><a class="footer__contact_link" href="#"><span class="footer__contact_icon">
+                      <svg class="icon icon_mark icon--size_mod">
+                        <use xlink:href="images/sprite/sprite.svg#mark"></use>
+                      </svg></span><span class="footer__contact_title">г. Краснодар, ул. Зиповская 5В, литер "С"</span></a></li>
+                <li class="footer__contact_item"><a class="footer__contact_link" href="#"><span class="footer__contact_icon">
+                      <svg class="icon icon_mail icon--size_mod">
+                        <use xlink:href="images/sprite/sprite.svg#mail"></use>
+                      </svg></span><span class="footer__contact_title">ajk_net@mail.ru</span></a></li>
+              </ul>
+            </div>
+            <div class="footer__col"><a class="footer__link" href="#">© Все права защищены, 2022</a><a class="footer__link footer__link--policy_mod" href="#">Политика конфиденциальности</a><a class="footer__link footer__link--arkada_mod" href="#"><img src="images/arkada.png" alt="logo"></a></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="popup js-popup-contact" data-popup-id="contact">
+      <div class="popup__in">
+        <div class="popup__content">
+          <button class="popup_close js-popup-close" type="button" aria-label="Close Popup" tabindex="0"></button>
+          <div class="popup__content_in">
+            <h2 class="popup__content_title">Оставьте заявку</h2>
+            <div class="popup__content_form_w">
+              <form action="" method="post">
+                <div class="popup__content_form">
+                  <div class="popup__content_form_item">
+                    <div class="form_input">
+                      <div class="form_input__field">
+                        <input class="form_input__element" type="text" id="name" placeholder="Имя">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="popup__content_form_item">
+                    <div class="form_input">
+                      <div class="form_input__field">
+                        <input class="form_input__element" type="text" id="phone" placeholder="Номер телефона">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="popup__content_descr">Отправляя заявку вы соглашаетесь на обработку своих персональных данных и принимаете политику конфиденциальности.</div>
+                  <div class="popup__content_form_btn_w">
+                    <button class="btn_1 popup__content_form_btn" type="submit">Отправить заявку</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="alert success">
+  <div class="alert_main">
+    <p>Ваше сообщение успешно отправлено!</p>
+    <div class="alert_icon"><svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg></div>
+  </div>
+</div>
+<div class="alert failed">
+  <div class="alert_main">
+    <p>Проверьте правильность полей!</p>
+    <div class="alert_icon"><svg class="checkmark" class="test-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="3" stroke-dasharray="100"><circle class="alert__circle" cx="26" cy="26" r="25" fill="none"/><path class="icon-path" id="check" d="M 15,15 L 32,33 M 32,15 L 15,33"></path></svg></div>
+  </div>
+</div>
+  <script defer src="js/app.js"></script></body>
+</html>
