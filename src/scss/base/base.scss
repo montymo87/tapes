@@ -26,6 +26,7 @@ html {
 	font-weight: 400;
 	line-height: 1.2;
 	font-family: $font_1;
+	font-variant-numeric: lining-nums proportional-nums;
 
 	@include bp(1920px, min) {
 		font-size: calc(100vw / 1920 * 10);
