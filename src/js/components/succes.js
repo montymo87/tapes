@@ -1,7 +1,7 @@
 const succes = (succes) => {
 	const state = document.querySelector(succes);
 	state.classList.toggle('active');
-	setTimeout(function () {
+	setTimeout(() => {
 		state.classList.remove('active');
 	}, 3000);
 };

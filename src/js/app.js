@@ -4,8 +4,7 @@ import initPopup from 'components/init-popup';
 import fade from 'components/fade';
 import heroAnimation from 'components/hero-animation';
 import formMask from 'components/form-mask';
-// import succes from 'components/succes';
-// import failed from 'components/failed';
+import alert from 'components/alert';
 
 import layout from 'layout/layout';
 import { pageLoad } from './utils';
@@ -48,6 +47,7 @@ export default class App {
 			fade();
 			heroAnimation();
 			formMask();
+			alert();
 		});
 		setTimeout(() => {
 			this.importPage();

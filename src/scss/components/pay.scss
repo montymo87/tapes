@@ -83,7 +83,7 @@
 		border-radius: 50%;
 		background-color: $red;
 		color: $gray;
-		font-family: $font_2;
+		font-variant-numeric: lining-nums proportional-nums;
 
 		counter-increment: items;
 		content: counter(items);

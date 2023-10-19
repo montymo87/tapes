@@ -4,6 +4,10 @@
 	padding-bottom: 10rem;
 }
 
+.review__in {
+	position: relative;
+}
+
 .review__heading {
 	@include flex_block(row, wrap, flex-start);
 
@@ -154,7 +158,7 @@
 		display: block;
 		counter-increment: section;
 		content: counter(section);
-		font-family: $font_2;
+		font-variant-numeric: lining-nums proportional-nums;
 	}
 
 	&.swiper-pagination-bullet-active {

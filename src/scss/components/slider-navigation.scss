@@ -35,10 +35,10 @@
 	}
 
 	@include bp($point_4, min) {
-		bottom: 8rem;
+		bottom: 0;
 	}
 	@include bp($point_4 - 1) {
-		bottom: 5rem;
+		bottom: -5rem;
 	}
 
 	// --------------------------------------------- Mods

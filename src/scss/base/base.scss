@@ -240,3 +240,32 @@ html :where(.wp-block) {
 		margin-bottom: 3rem;
 	}
 }
+
+.wpcf7-form-control {
+	&.wpcf7-not-valid {
+		box-shadow: inset 0 0 0 1px red !important;
+	}
+}
+
+.wpcf7-form-control-wrap {
+	.wpcf7-not-valid-tip {
+		display: none !important;
+	}
+}
+
+.wpcf7-response-output {
+	display: none !important;
+}
+
+.ajax-loader {
+	display: none !important;
+}
+
+.wpcf7-spinner {
+	display: none !important;
+}
+
+input[type='submit'] {
+	border: none;
+	cursor: pointer;
+}

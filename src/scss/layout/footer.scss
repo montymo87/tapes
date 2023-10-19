@@ -19,7 +19,7 @@
 	}
 }
 
-.header__in {
+.footer__in {
 	max-width: $page_width;
 	width: 100%;
 	margin: 0 auto;
@@ -76,7 +76,7 @@
 	font-size: 2rem;
 	color: $gray;
 	font-weight: 600;
-	font-family: $font_2;
+	font-variant-numeric: lining-nums proportional-nums;
 
 	transition: opacity ease 0.3s;
 
@@ -204,7 +204,10 @@
 	&.footer__link--arkada_mod {
 		width: 18.8rem;
 		height: 2.5rem;
-		margin-left: auto;
+
+		@include bp($point_2, min) {
+			margin-left: auto;
+		}
 	}
 
 	img {

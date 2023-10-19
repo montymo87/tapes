@@ -169,7 +169,7 @@
 	}
 
 	.header__top_link--phone_mod & {
-		font-family: $font_2;
+		font-variant-numeric: lining-nums proportional-nums;
 		font-size: 2rem;
 		color: $gray;
 		font-weight: 600;
