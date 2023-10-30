@@ -23,6 +23,13 @@
 		grid-column: 1 / 3;
 		grid-row: 1 / 3;
 	}
+
+	.grid--design_mod & {
+		&:nth-child(1) {
+			grid-column: 1 / 1;
+			grid-row: 1 / 1;
+		}
+	}
 }
 
 .grid__list_link {
