@@ -44,8 +44,8 @@ export default class App {
 			gridPreview();
 			reviewSlider();
 			initPopup('.js-popup-contact-trigger', '.js-popup-contact');
-			fade();
-			heroAnimation();
+			// fade();
+			// heroAnimation();
 			formMask();
 			alert();
 		});

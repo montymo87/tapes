@@ -47,7 +47,7 @@
 }
 
 .about_prod__info {
-	.about_prod__item:nth-child(odd) & {
+	.about_prod__item:not(:last-child):nth-child(odd) & {
 		@include bp($point_2, min) {
 			padding: 3rem 0 12rem;
 		}
