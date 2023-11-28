@@ -128,19 +128,30 @@
 }
 
 .cta__btn {
-	height: 7.2rem;
-	line-height: 7.2rem;
+	@include flex_block(row, wrap, center, center, center);
+
+	min-height: 7.2rem;
+	padding: 2rem;
+	color: $white;
+	border-radius: 1rem;
+	text-align: center;
+
+	@include bp($point_2, min) {
+		font-size: 2rem;
+	}
 
 	@include bp($point_3) {
 		font-size: 1.6rem;
 		font-weight: 400;
 	}
 
+	transition: all ease 0.3s;
 	background-color: #4b9fec;
 	box-shadow: inset 0px 0px 0px 2px rgba($gray, 0);
 
 	&:hover {
 		background-color: transparent;
 		box-shadow: inset 0px 0px 0px 2px rgba($gray, 1);
+		text-decoration: none;
 	}
 }

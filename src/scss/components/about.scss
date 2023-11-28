@@ -1,26 +1,37 @@
 .about {
 	background-color: $blue;
 
-	padding: 5rem var(--gl-indent);
+	@include bp($point_2, min) {
+		padding: 5rem var(--gl-indent);
+	}
+	@include bp($point_3) {
+		padding: 2rem var(--gl-indent) 2rem;
+	}
 }
 
 .about__list {
 	@include flex_block(row, wrap, center);
 
-	margin: 0 -4rem -4rem 0;
+	@include bp($point_2, min) {
+		margin: 0 -4rem -4rem 0;
+	}
+	@include bp($point_3) {
+		margin: 0 -2rem -2rem 0;
+	}
 }
 
 .about__item {
-	padding: 0 4rem 4rem 0;
 	color: $gray;
 	// max-width: 32rem;
 	// width: 100%;
 
 	@include bp($point_2, min) {
 		width: 25%;
+		padding: 0 4rem 4rem 0;
 	}
 	@include bp($point_3) {
 		width: 100%;
+		padding: 0 2rem 2rem 0;
 	}
 }
 

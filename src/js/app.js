@@ -5,6 +5,8 @@ import fade from 'components/fade';
 import heroAnimation from 'components/hero-animation';
 import formMask from 'components/form-mask';
 import alert from 'components/alert';
+import selectInit from 'components/select-init';
+// import imageColor from 'components/image-color';
 
 import layout from 'layout/layout';
 import { pageLoad } from './utils';
@@ -40,7 +42,7 @@ export default class App {
 		const initLayout = layout();
 		pageLoad(() => {
 			document.body.classList.add('body--loaded');
-
+			selectInit();
 			gridPreview();
 			reviewSlider();
 			initPopup('.js-popup-contact-trigger', '.js-popup-contact');
@@ -48,6 +50,7 @@ export default class App {
 			// heroAnimation();
 			formMask();
 			alert();
+			// imageColor();
 		});
 		setTimeout(() => {
 			this.importPage();
